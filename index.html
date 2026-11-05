@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Digital portfolio for Alex Morgan featuring projects, skills, and contact information."
+    />
+    <title>Alex Morgan | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <div class="brand">Alex Morgan</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+        </div>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          🌙 Dark Mode
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Frontend Developer & Problem Solver</p>
+          <h1>Building clean digital experiences.</h1>
+          <p class="lead">
+            I design and develop responsive websites that turn ideas into engaging,
+            user-friendly products.
+          </p>
+          <div class="cta-row">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="#about">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Profile summary card">
+          <div class="avatar">AM</div>
+          <h2>Alex Morgan</h2>
+          <p>Available for freelance work and product design collaborations.</p>
+          <ul>
+            <li>UI/UX focused</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Responsive design</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Creative, curious, and motivated.</h2>
+        </div>
+        <div class="about-grid">
+          <p>
+            I’m a digital designer and web developer with a focus on simple,
+            elegant interfaces and smooth user experiences. My work combines
+            technical thinking with visual storytelling to build solutions that
+            are both functional and memorable.
+          </p>
+          <p>
+            I enjoy translating ideas into polished digital products, whether it’s
+            a personal portfolio, a business landing page, or a small web app.
+            Learning, testing, and refining each detail is what keeps me engaged.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section alt-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Tools and strengths.</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>Design</h3>
+              <p>Wireframing, layout design, color systems, and user-centered mockups.</p>
+            </div>
+            <div class="skill-card">
+              <h3>Development</h3>
+              <p>Semantic HTML, responsive CSS, JavaScript interactivity, and accessibility.</p>
+            </div>
+            <div class="skill-card">
+              <h3>Workflow</h3>
+              <p>Git, version control, deployment, and iterative improvement based on feedback.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section container">
+        <div class="section-heading project-header">
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work.</h2>
+          </div>
+          <div class="filter-group" aria-label="Project filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">App</button>
+          </div>
+        </div>
+        <div id="projectList" class="projects-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© 2026 Alex Morgan</p>
+        <a href="mailto:alex@example.com">alex@example.com</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
